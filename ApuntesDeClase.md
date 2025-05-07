@@ -85,3 +85,5 @@ o
 ***$ git switch -c &lt;nombre de la rama&gt;***  
 
 Considerar que al crear una nueva rama esta tendrá los cambios del ultimo commit que se hicieron.  
+Considerar que las ramas serán visibles en el ultimo commit que se hicieron  
+![PUNTERO](<imagenes/2025-05-06 20_31_30-ApuntesDeClase.md - ProyectoGit - Visual Studio Code.png>)
