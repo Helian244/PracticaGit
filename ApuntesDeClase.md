@@ -28,7 +28,7 @@ El comando nos ayuda a crear un proyecto nuevo (repositorio local).
 #### ¿Cómo saber si lo hice correctamente?
 Nos mostrara la rama en la que estamos en el git bash:  
 ![git init correcto](imagenes/2025-05-02%2017_52_33-MINGW64__g_ProyectoGit.png)
-### Uso de *git --help*
+### Uso de *git --help*  
 Lista de comandos útiles  
 ![git --help](<imagenes/2025-05-02 18_00_31-MINGW64__g_ProyectoGit.png>)
 # Clase 2
@@ -86,4 +86,9 @@ o
 
 Considerar que al crear una nueva rama esta tendrá los cambios del ultimo commit que se hicieron.  
 Considerar que las ramas serán visibles en el ultimo commit que se hicieron  
-![PUNTERO](<imagenes/2025-05-06 20_31_30-ApuntesDeClase.md - ProyectoGit - Visual Studio Code.png>)
+![PUNTERO](<imagenes/2025-05-06 20_31_30-ApuntesDeClase.md - ProyectoGit - Visual Studio Code.png>)  
+# Clase 3
+## Ramas
+### Fusión de ramas
+Las bifurcaciones tienen 2 destinos: El olvido o la fusion con otra rama.  
+Al decir fusión nos referimos a la integración de cambios de una rama a otra, para que los cambios de una rama se asimilen con otra rama.
