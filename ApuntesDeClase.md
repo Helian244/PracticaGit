@@ -99,3 +99,5 @@ Al hacer ***git merge*** por defecto se hace un nuevo commit con todos los cambi
 #### Otros comandos útiles:
 ***$ git merge --edit :*** Abre un editor antes de hacer commit  
 ***$ git merge --no--commit :*** Evita que se realize un commit automáticamente.  
+### Eliminación de ramas
+La razón principal es que es una buena practica, las ramas tienen un tiempo de vida acorde a la realización de su objetivo.
