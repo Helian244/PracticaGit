@@ -101,3 +101,9 @@ Al hacer ***git merge*** por defecto se hace un nuevo commit con todos los cambi
 ***$ git merge --no--commit :*** Evita que se realize un commit automáticamente.  
 ### Eliminación de ramas
 La razón principal es que es una buena practica, las ramas tienen un tiempo de vida acorde a la realización de su objetivo.
+#### Comando: ***$ git branch --delete &lt;nombre de la rama&gt;*** 
+Usamos este comando para eliminar ramas sueltas y que ya cumplieron su propósito (o unirse a otra rama), también podemos abreviar el comando con:  
+***$ git branch -d &lt;nombre de la rama&gt;***  
+Si la rama ya hizo merge con otra no habrá problema, sin embargo si no ocurrió esto ultimo nos devolverá un error:  
+Podemos forzar la eliminación usando el siguiente comando:  
+***$ git branch -D &lt;nombre de la rama&gt;***  
