@@ -92,13 +92,14 @@ Considerar que las ramas serán visibles en el ultimo commit que se hicieron
 ### Fusión de ramas
 Las bifurcaciones tienen 2 destinos: El olvido o la fusion con otra rama.  
 Al decir fusión nos referimos a la integración de cambios de una rama a otra, para que los cambios de una rama se asimilen con otra rama.
-#### ***$ git merge***  
+#### ***$ git merge &lt;nombre de la rama&gt;***  
 Usamos este comando para incorporar cambios de otra rama en la que estamos actualmente.  
 ![git merge](<imagenes/2025-05-08 18_51_31-Clase de Git_GitHub- Scesi - 3 - YouTube.png>)  
 Al hacer ***git merge*** por defecto se hace un nuevo commit con todos los cambios de la rama de origen a la rama actual.
 #### Otros comandos útiles:
-***$ git merge --edit :*** Abre un editor antes de hacer commit  
-***$ git merge --no--commit :*** Evita que se realize un commit automáticamente.  
+***$ git merge &lt;nombre de la rama&gt; --edit :*** Abre un editor antes de hacer commit  
+***$ git merge &lt;nombre de la rama&gt; --no--commit :*** Evita que se realize un commit automáticamente.  
+***$ git merge &lt;nombre de la rama&gt; --no-ff :*** Evita que se realize un fast forward y fuerza el commit de merge de ramas.  
 ### Eliminación de ramas
 La razón principal es que es una buena practica, las ramas tienen un tiempo de vida acorde a la realización de su objetivo.
 #### Comando: ***$ git branch --delete &lt;nombre de la rama&gt;*** 
