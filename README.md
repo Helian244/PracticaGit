@@ -89,3 +89,36 @@ También tenemos que para cambiar constantemente entre 2 ramas, una rama previa:
 Considerar que al crear una nueva rama esta tendrá los cambios del ultimo commit que se hicieron.  
 Considerar que las ramas serán visibles en el ultimo commit que se hicieron  
 ![PUNTERO](<imagenes/2025-05-06 20_31_30-ApuntesDeClase.md - ProyectoGit - Visual Studio Code.png>)  
+# Clase 3
+## Ramas
+### Fusión de ramas
+Las bifurcaciones tienen 2 destinos: El olvido o la fusion con otra rama.  
+Al decir fusión nos referimos a la integración de cambios de una rama a otra, para que los cambios de una rama se asimilen con otra rama.
+#### ***$ git merge &lt;nombre de la rama&gt;***  
+Usamos este comando para incorporar cambios de otra rama en la que estamos actualmente.  
+![git merge](<imagenes/2025-05-08 18_51_31-Clase de Git_GitHub- Scesi - 3 - YouTube.png>)  
+Al hacer ***git merge*** por defecto se hace un nuevo commit con todos los cambios de la rama de origen a la rama actual.
+#### Otros comandos útiles:
+***$ git merge &lt;nombre de la rama&gt; --edit :*** Abre un editor antes de hacer commit  
+***$ git merge &lt;nombre de la rama&gt; --no--commit :*** Evita que se realize un commit automáticamente.  
+***$ git merge &lt;nombre de la rama&gt; --no-ff :*** Evita que se realize un fast forward y fuerza el commit de merge de ramas.  
+### Eliminación de ramas
+La razón principal es que es una buena practica, las ramas tienen un tiempo de vida acorde a la realización de su objetivo.
+#### Comando: ***$ git branch --delete &lt;nombre de la rama&gt;*** 
+Usamos este comando para eliminar ramas sueltas y que ya cumplieron su propósito (o unirse a otra rama), también podemos abreviar el comando con:  
+***$ git branch -d &lt;nombre de la rama&gt;***  
+Si la rama ya hizo merge con otra no habrá problema, sin embargo si no ocurrió esto ultimo nos devolverá un error:  
+Podemos forzar la eliminación usando el siguiente comando:  
+***$ git branch -D &lt;nombre de la rama&gt;***  
+### ***$ git rebase &lt;nombre de la rama objetivo&gt;***
+Rebase es un comando que nos ayuda a reubicar la secuencia de commits de la rama actual a una rama objetivo para reescribir el historial de commits.
+### Conflictos en Git
+Suceden cuando queremos fusionar cambios en las mismas lineas de un fichero de diferentes ramas, esto se da ya que Git no sabe que cambio prevalecerá en la fusion y nos pedirá que resolvamos este.  
+![Conflictos](<imagenes/2025-05-09 09_11_08-Clase de Git_GitHub- Scesi - 3 - YouTube.png>)  
+#### Resolver conflictos
+Tenemos 2 opciones, usar Visual Studio Code o abrir un editor de texto con el comando ***$ git diff***, tenemos un formato ya establecido que nos explica los conflictos:  
+<<<<<<<HEAD (Cambio actual)  
+Los cambios de la rama actual  
+\=========================  
+Los cambios de la rama seleccionada por merge  
+\>>>>>>\<Rama seleccionada>(Cambio entrante)
