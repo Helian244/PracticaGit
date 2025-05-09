@@ -82,3 +82,8 @@ Es un solicitud de integración de todos los cambios al repositorio de origen.
 Previamente debemos haber hecho un push y entonces:  
 1. La rama subida recientemente nos mostrara una opción en GitHub > Code.
 2. Ir al apartado GitHub > Pull requests.
+#### Buenas practicas para una PR
+1. **Enfoque en un solo objetivo:** Las revisiones son menos exhaustivas.
+2. **Detallar la PR:** Dar mas información demuestra con claridad la funcionalidad a implementar.
+3. **Proporcionar feedback constructivo**
+4. **Entender la dimensionalidad y contexto que lleva la PR:** como afecta al proyecto, que cosas son útiles, que cosas podemos agregar.
