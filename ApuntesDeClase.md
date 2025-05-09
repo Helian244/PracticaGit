@@ -110,3 +110,5 @@ Usamos este comando para eliminar ramas sueltas y que ya cumplieron su propósit
 Si la rama ya hizo merge con otra no habrá problema, sin embargo si no ocurrió esto ultimo nos devolverá un error:  
 Podemos forzar la eliminación usando el siguiente comando:  
 ***$ git branch -D &lt;nombre de la rama&gt;***  
+### ***$ git rebase &lt;nombre de la rama objetivo&gt;***
+Rebase es un comando que nos ayuda a reubicar la secuencia de commits de la rama actual a una rama objetivo para reescribir el historial de commits.
