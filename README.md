@@ -31,3 +31,61 @@ Nos mostrara la rama en la que estamos en el git bash:
 ### Uso de *git --help*  
 Lista de comandos útiles  
 ![git --help](<imagenes/2025-05-02 18_00_31-MINGW64__g_ProyectoGit.png>)
+# Clase 2
+## Estados de Git
+### Existen 3 estados de git:
+- **Modified:** El archivo se creo, elimino o ha sido cambiado, este no tiene los cambios confirmados. 
+- **Staged:** El archivo se marco como preparado para ser confirmado por el repositorio local.
+- **Committed:** El archivo se graba en el repositorio local.
+## Staging Area
+Cuando añadimos archivos al repositorio local o modificamos los ya existentes, y queremos guardarlo, el primer paso es llevarlos a la staging area, un sector que nos permite confirmar los cambios que realizamos en el repositorio local.  
+### ¿Cómo llevar mis cambios a la staging area?
+Usamos el siguiente comando, para cada archivo que deseemos añadir a la staging area:  
+***$ git add &lt;file name&gt;***  
+Si queremos llevar todos los cambios producidos:  
+***$ git add .***  
+### *Git restore --staged &lt;file name&gt;* 
+Nos ayuda a remover un archivo de la staging area.
+## Commit y su importancia
+Registra los cambios producidos en el repositorio  
+Al tener la perspectiva de fotografías tenemos que:  
+![commit como fotografía](<imagenes/2025-05-03 12_15_42-(667) Clase de Git_GitHub- Scesi - 2 - YouTube.png>)  
+Tenemos un punto de restauración si es que nos equivocamos.
+### Usando el commit
+Para guardar los cambios de la staging area hacemos un commit con el siguiente comando:  
+***$ git commit***  
+Para añadir un mensaje al commit usamos:  
+***$ git commit -m*** *"Mensaje descriptivo del commit"*  
+Estos cambios se guardaran en el repositorio local hasta hacer nuevamente un commit con otros cambios.   
+### Ver los commits que realize
+Usamos el comando:  
+***$ git log***  
+El cual nos permite ver un registro de los commits que se realizaron hasta el momento.  
+![git log](<imagenes/2025-05-06 19_31_31-MINGW64__g_ProyectoGit.png>)  
+***$ git log --online*** nos muestra solo los mensajes de commits.  
+![git log --oneline](<imagenes/2025-05-06 19_35_29-MINGW64__g_ProyectoGit.png>)  
+### ***$ git commit --amend -m*** *"Nuevo mensaje de commit"*
+Nos ayuda a "sustituir" el mensaje del ultimo commit realizado, considerar que "cambia" el identificador del ultimo commit.
+## ¿HEAD qué es?
+Es el puntero de referencia que nos indica el lugar actual en el que estamos dentro del repositorio.  
+![HEAD](<imagenes/2025-05-06 19_59_44-● ApuntesDeClase.md - ProyectoGit - Visual Studio Code.png>)
+## ¿Qué es una rama?
+Bifurcación del punto actual en el que nos encontramos.  
+Técnicamente es un nuevo apuntador hacia un commit distinto.  
+![Branch](<imagenes/2025-05-06 20_06_27-Clase de Git_GitHub- Scesi - 2 - YouTube.png>)
+### Propósito de las ramas
+Permite el desarrollo colaborativo y no lineal.
+### Creando una nueva rama
+***$ git branch &lt;nombre de la rama&gt;***
+### Cambiar de rama
+***$ git checkout &lt;nombre de la rama&gt;***  
+o  
+***$ git switch &lt;nombre de la rama&gt;***  
+También tenemos que para cambiar constantemente entre 2 ramas, una rama previa:  
+***$ git switch -***  
+### Para hacer los 2 anteriores pasos a la vez
+***$ git switch -c &lt;nombre de la rama&gt;***  
+
+Considerar que al crear una nueva rama esta tendrá los cambios del ultimo commit que se hicieron.  
+Considerar que las ramas serán visibles en el ultimo commit que se hicieron  
+![PUNTERO](<imagenes/2025-05-06 20_31_30-ApuntesDeClase.md - ProyectoGit - Visual Studio Code.png>)  
