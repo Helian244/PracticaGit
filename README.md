@@ -38,3 +38,6 @@ Copia en portapapeles:
 ***clip < ~/.ssh/id_rsa.pub***  
 Pegar en seccion "key":  
 ***https://github.com/settings/ssh/new***  
+### Clonación de repositorios
+Usamos el comando en git bash:  
+***$ git clone <direccion HTTPS del repositorio terminado en ".git">***  
