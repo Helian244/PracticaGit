@@ -70,3 +70,9 @@ Empujar cambios del repositorio local al remoto.
 - ***$ git push --all :*** Actualiza todas la ramas en las referencias correspondientes.  
 - ***$ git push -u \<alias remoto> \<rama> :*** Conecta la rama local con la remota, para que se pueda hacer un ***git push*** convencional.
 - ***$ git push -f :*** Sobrescribe el historial del remoto con el historial local, eliminando los commits del remoto que no estén en el local.
+### Pull
+Jalar los cambios del repositorio remoto al local.
+#### Comandos:
+- ***$ git pull***  
+- ***$ git pull --set-upstream \<alias remoto> \<rama> :***  Sincroniza la rama local con la remota.  
+- ***$ git pull --all :*** Actualiza todas la ramas en las referencias correspondientes.  
