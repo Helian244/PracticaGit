@@ -122,3 +122,92 @@ Los cambios de la rama actual
 \=========================  
 Los cambios de la rama seleccionada por merge  
 \>>>>>>\<Rama seleccionada>(Cambio entrante)
+# Clase 4
+## GitHub
+GitHub no es lo mismo que Git, GitHub es un servicio de alojamiento en la nube basado en Git y Git es el controlador de versiones.  
+### ¿GitHub como único servicio?
+No, existen mas servicios como Bitbucket, GitLab.
+## Repositorios remotos
+Son repositorios alojados en un servidor y estará sujeto a sincronización con el repositorio local.
+## Características que ofrece GitHub
+### Mi Perfil y mis repositorios
+Estadísticas, contribuciones que hacemos a nuestros y otros repositorios.  
+Visualización de la cantidad de repositorios propios (tienen un limite) y en los que participamos.
+### Buscar otros perfiles y repositorios
+Podemos ver las estadísticas de otros perfiles, su actividad, sus repositorios públicos, organizaciones a las que pertenece.
+### Proyectos
+Herramientas de gestión de proyectos, flujos de trabajo, creación y asignación de tareas a integrantes del proyecto.
+### Repositorio > Actions
+Nos ayuda con DevOps, deployment del repositorio, la seguridad, integración continua.  
+Nos permite automatizar gran parte y diferentes areas del repositorio
+### Organizaciones
+Nos permiten tener una comunidad que comparte repositorios propios de la organización.
+## Enlazar un repositorio local con uno remoto
+Usamos el siguiente comando en git bash:  
+***$ git remote add \<alias>*** (usualmente el alias es "origin") ***\<url del repositorio remoto>***
+### Generar llaves SSH
+Las llaves se usan para autenticar la identidad de un contribuyente, evitan las suplantaciones de identidad.  
+#### Pasos:
+Listado de nuestras llaves:  
+***$ ls -al ~/.ssh***  
+Crear llave SSH:  
+***ssh-keygen -t rsa -b 4096 -C "tu.email@email.com "***  
+***press enter***  
+***passphrase***  
+Poner en marcha la llave:  
+***eval "$(ssh-agent -s)"***  
+Añadir la llave:  
+***ssh-add ~/.ssh/id_rsa***  
+Copia en portapapeles:  
+***clip < ~/.ssh/id_rsa.pub***  
+Pegar en sección "key":  
+***https://github.com/settings/ssh/new***  
+### Clonación de repositorios
+Usamos el comando en git bash:  
+***$ git clone <dirección HTTPS del repositorio terminado en ".git">***  
+### Realizar cambios en el repositorio remoto
+Para ir modificando el remoto debemos escribir el siguiente comando:  
+***$ git push \<alias del repositorio remoto> \<rama a la cual enviaremos los cambios>***  
+### Creación de una rama remota
+Usamos el siguiente comando en git bash:  
+***$ git switch -c \<rama>***  
+También podemos usar esta otra variante:  
+***$ git checkout -b \<rama>***  
+Este comando crea la nueva rama en el repositorio local.  
+Para enviar esta rama al remoto usamos:  
+***$ git push \<alias del remoto> \<rama>***  
+Considerar que tratar de hacer push a una rama no existente generara un error  
+![push inexistente](<imagenes/2025-05-09 11_48_11-MINGW64__g_ProyectoGit.png>)
+### Eliminar ramas del repositorio local que ya no se usan
+Ejecuta el comando:  
+***$ git remote prune \<alias del remoto>***  
+### ***$ git fetch***  
+Nos permite actualizar las referencias del remoto a nuestro local, es precisamente importante hacerlo antes de un *git pull*  
+**Nota importante:** Para visualizar la referencia de una rama remota en el local debemos cambiarnos a la rama en cuestión. 
+### ***$ git branch -a***  
+Nos muestra las referencias tanto de las ramas locales, como de las remotas.
+## Push, Pull & Pull Request
+### Push
+Empujar cambios del repositorio local al remoto.
+#### Comandos:
+- ***$ git push***  
+- ***$ git push --all :*** Actualiza todas la ramas en las referencias correspondientes.  
+- ***$ git push -u \<alias remoto> \<rama> :*** Conecta la rama local con la remota, para que se pueda hacer un ***git push*** convencional.
+- ***$ git push -f :*** Sobrescribe el historial del remoto con el historial local, eliminando los commits del remoto que no estén en el local.
+### Pull
+Jalar los cambios del repositorio remoto al local.
+#### Comandos:
+- ***$ git pull***  
+- ***$ git pull --set-upstream \<alias remoto> \<rama> :***  Sincroniza la rama local con la remota.  
+- ***$ git pull --all :*** Actualiza todas la ramas en las referencias correspondientes.  
+### Pull Request 
+Es un solicitud de integración de todos los cambios al repositorio de origen.
+#### ¿Cómo hacemos una PR?
+Previamente debemos haber hecho un push y entonces:  
+1. La rama subida recientemente nos mostrara una opción en GitHub > Code.
+2. Ir al apartado GitHub > Pull requests.
+#### Buenas practicas para una PR
+1. **Enfoque en un solo objetivo:** Las revisiones son menos exhaustivas.
+2. **Detallar la PR:** Dar mas información demuestra con claridad la funcionalidad a implementar.
+3. **Proporcionar feedback constructivo**
+4. **Entender la dimensionalidad y contexto que lleva la PR:** como afecta al proyecto, que cosas son útiles, que cosas podemos agregar.
