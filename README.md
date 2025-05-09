@@ -13,3 +13,6 @@ Visualización de la cantidad de repositorios propios (tienen un limite) y en lo
 Podemos ver las estadísticas de otros perfiles, su actividad, sus repositorios públicos, organizaciones a las que pertenece.
 ### Proyectos
 Herramientas de gestión de proyectos, flujos de trabajo, creación y asignación de tareas a integrantes del proyecto.
+### Repositorio > Actions
+Nos ayuda con DevOps, deployment del repositorio, la seguridad, integración continua.  
+Nos permite automatizar gran parte y diferentes areas del repositorio
