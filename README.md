@@ -58,6 +58,7 @@ Considerar que tratar de hacer push a una rama no existente generara un error
 Ejecuta el comando:  
 ***$ git remote prune \<alias del remoto>***  
 ### ***$ git fetch***  
-Nos permite actualizar las referencias del remoto a nuestro local, es precisamente importante hacerlo antes de un *git pull*
+Nos permite actualizar las referencias del remoto a nuestro local, es precisamente importante hacerlo antes de un *git pull*  
+Nota importante: Para visualizar la referencia de una rama remota en el local debemos cambiarnos a la rama en cuestión. 
 ### ***$ git branch -a***  
 Nos muestra las referencias tanto de las ramas locales, como de las remotas.
