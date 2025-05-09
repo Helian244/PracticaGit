@@ -23,3 +23,18 @@ Usamos el siguiente comando en git bash:
 ***$ git remote add \<alias>*** (usualmente el alias es "origin") ***\<url del repositorio remoto>***
 ### Generar llaves SSH
 Las llaves se usan para autenticar la identidad de un contribuyente, evitan las suplantaciones de identidad.  
+#### Pasos:
+Listado de nuestras llaves:  
+***$ ls -al ~/.ssh***  
+Crear llave SSH:  
+***ssh-keygen -t rsa -b 4096 -C "tu.email@email.com "***  
+***press enter***  
+***passphrase***  
+Poner en marcha la llave:  
+***eval "$(ssh-agent -s)"***  
+Añadir la llave:  
+***ssh-add ~/.ssh/id_rsa***  
+Copia en portapapeles:  
+***clip < ~/.ssh/id_rsa.pub***  
+Pegar en seccion "key":  
+***https://github.com/settings/ssh/new***  
