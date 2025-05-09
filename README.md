@@ -11,3 +11,5 @@ Estadísticas, contribuciones que hacemos a nuestros y otros repositorios.
 Visualización de la cantidad de repositorios propios (tienen un limite) y en los que participamos.
 ### Buscar otros perfiles y repositorios
 Podemos ver las estadísticas de otros perfiles, su actividad, sus repositorios públicos, organizaciones a las que pertenece.
+### Proyectos
+Herramientas de gestión de proyectos, flujos de trabajo, creación y asignación de tareas a integrantes del proyecto.
