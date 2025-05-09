@@ -9,3 +9,5 @@ Son repositorios alojados en un servidor y estará sujeto a sincronización con 
 ### Mi Perfil y mis repositorios
 Estadísticas, contribuciones que hacemos a nuestros y otros repositorios.  
 Visualización de la cantidad de repositorios propios (tienen un limite) y en los que participamos.
+### Buscar otros perfiles y repositorios
+Podemos ver las estadísticas de otros perfiles, su actividad, sus repositorios públicos, organizaciones a las que pertenece.
