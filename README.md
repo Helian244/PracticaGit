@@ -20,4 +20,5 @@ Solo la rama **main** y ramas auxiliares temporales que seran integradas por un 
 2. **Show :** Petición de cambios para ser revisados por medio de CI, la fusion se da inmediatamente.
 3. **Ask :** PR para discutir los cambias antes de la fusion.  
   
-Flujo de trabajo sugerido para expertos, que tengan seguridad de subir sus cambios y pleno conocimiento del proyecto.
+Flujo de trabajo sugerido para expertos, que tengan seguridad de subir sus cambios y pleno conocimiento del proyecto.  
+![ship/show/ask](<imagenes/2025-05-09 14_53_58-Clase de Git_GitHub- Scesi - 5 - YouTube.png>)
