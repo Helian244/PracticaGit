@@ -78,3 +78,7 @@ Jalar los cambios del repositorio remoto al local.
 - ***$ git pull --all :*** Actualiza todas la ramas en las referencias correspondientes.  
 ### Pull Request 
 Es un solicitud de integración de todos los cambios al repositorio de origen.
+#### ¿Cómo hacemos una PR?
+Previamente debemos haber hecho un push y entonces:  
+1. La rama subida recientemente nos mostrara una opción en GitHub > Code.
+2. Ir al apartado GitHub > Pull requests.
