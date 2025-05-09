@@ -22,3 +22,8 @@ Solo la rama **main** y ramas auxiliares temporales que seran integradas por un 
   
 Flujo de trabajo sugerido para expertos, que tengan seguridad de subir sus cambios y pleno conocimiento del proyecto.  
 ![ship/show/ask](<imagenes/2025-05-09 14_53_58-Clase de Git_GitHub- Scesi - 5 - YouTube.png>)
+### Reglas para Ship/Show/Ask
+1. Tener un buen sistema CI/CD
+2. Confianza plena en el equipo, todos deben tener buenas practicas de desarrollo y responsabilidad.
+3. No es requerimiento la revision de código.
+4. Las ramas son pequeñas y de corto tiempo de vida, salen desde la rama principal.
