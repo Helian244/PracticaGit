@@ -59,6 +59,13 @@ Ejecuta el comando:
 ***$ git remote prune \<alias del remoto>***  
 ### ***$ git fetch***  
 Nos permite actualizar las referencias del remoto a nuestro local, es precisamente importante hacerlo antes de un *git pull*  
-Nota importante: Para visualizar la referencia de una rama remota en el local debemos cambiarnos a la rama en cuestión. 
+**Nota importante:** Para visualizar la referencia de una rama remota en el local debemos cambiarnos a la rama en cuestión. 
 ### ***$ git branch -a***  
 Nos muestra las referencias tanto de las ramas locales, como de las remotas.
+## Push, Pull & Pull Request
+### Push
+Empujar cambios del repositorio local al remoto.
+#### Comandos:
+- ***$ git push***  
+- ***$ git push --all :*** Actualiza todas la ramas en las referencias correspondientes.  
+- ***$ git push -u \<alias remoto> \<rama> :*** Conecta la rama local con la remota, para que se pueda hacer un ***git push*** convencional.
