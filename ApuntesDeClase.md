@@ -114,4 +114,12 @@ Podemos forzar la eliminación usando el siguiente comando:
 Rebase es un comando que nos ayuda a reubicar la secuencia de commits de la rama actual a una rama objetivo para reescribir el historial de commits.
 ### Conflictos en Git
 Suceden cuando queremos fusionar cambios en las mismas lineas de un fichero de diferentes ramas, esto se da ya que Git no sabe que cambio prevalecerá en la fusion y nos pedirá que resolvamos este.  
-![Conflictos](<imagenes/2025-05-09 09_11_08-Clase de Git_GitHub- Scesi - 3 - YouTube.png>)
+![Conflictos](<imagenes/2025-05-09 09_11_08-Clase de Git_GitHub- Scesi - 3 - YouTube.png>)  
+#### Resolver conflictos
+Tenemos 2 opciones, usar Visual Studio Code o abrir un editor de texto con el comando ***$ git diff***, tenemos un formato ya establecido que nos explica los conflictos:  
+<<<<<<<HEAD (Cambio actual)  
+Los cambios de la rama actual  
+\=========================  
+Los cambios de la rama seleccionada por merge  
+\>>>>>>\<Rama seleccionada>(Cambio entrante)
+
