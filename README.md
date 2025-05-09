@@ -59,3 +59,5 @@ Ejecuta el comando:
 ***$ git remote prune \<alias del remoto>***  
 ### ***$ git fetch***  
 Nos permite actualizar las referencias del remoto a nuestro local, es precisamente importante hacerlo antes de un *git pull*
+### ***$ git branch -a***  
+Nos muestra las referencias tanto de las ramas locales, como de las remotas.
