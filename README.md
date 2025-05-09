@@ -122,4 +122,3 @@ Los cambios de la rama actual
 \=========================  
 Los cambios de la rama seleccionada por merge  
 \>>>>>>\<Rama seleccionada>(Cambio entrante)
-
