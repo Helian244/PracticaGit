@@ -36,7 +36,7 @@ Añadir la llave:
 ***ssh-add ~/.ssh/id_rsa***  
 Copia en portapapeles:  
 ***clip < ~/.ssh/id_rsa.pub***  
-Pegar en seccion "key":  
+Pegar en sección "key":  
 ***https://github.com/settings/ssh/new***  
 ### Clonación de repositorios
 Usamos el comando en git bash:  
@@ -69,3 +69,4 @@ Empujar cambios del repositorio local al remoto.
 - ***$ git push***  
 - ***$ git push --all :*** Actualiza todas la ramas en las referencias correspondientes.  
 - ***$ git push -u \<alias remoto> \<rama> :*** Conecta la rama local con la remota, para que se pueda hacer un ***git push*** convencional.
+- ***$ git push -f :*** Sobrescribe el historial del remoto con el historial local, eliminando los commits del remoto que no estén en el local.
