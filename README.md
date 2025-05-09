@@ -18,3 +18,6 @@ Nos ayuda con DevOps, deployment del repositorio, la seguridad, integración con
 Nos permite automatizar gran parte y diferentes areas del repositorio
 ### Organizaciones
 Nos permiten tener una comunidad que comparte repositorios propios de la organización.
+## Enlazar un repositorio local con uno remoto
+Usamos el siguiente comando en git bash:  
+***$ git remote add \<alias>*** (usualmente el alias es "origin") ***\<url del repositorio remoto>***
