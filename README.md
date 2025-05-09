@@ -54,3 +54,6 @@ Para enviar esta rama al remoto usamos:
 ***$ git push \<alias del remoto> \<rama>***  
 Considerar que tratar de hacer push a una rama no existente generara un error  
 ![push inexistente](<imagenes/2025-05-09 11_48_11-MINGW64__g_ProyectoGit.png>)
+### Eliminar ramas del repositorio local que ya no se usan
+Ejecuta el comando:  
+***$ git remote prune \<alias del remoto>***  
