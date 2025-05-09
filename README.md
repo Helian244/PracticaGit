@@ -16,3 +16,5 @@ Herramientas de gestión de proyectos, flujos de trabajo, creación y asignació
 ### Repositorio > Actions
 Nos ayuda con DevOps, deployment del repositorio, la seguridad, integración continua.  
 Nos permite automatizar gran parte y diferentes areas del repositorio
+### Organizaciones
+Nos permiten tener una comunidad que comparte repositorios propios de la organización.
