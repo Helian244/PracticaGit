@@ -5,3 +5,7 @@ GitHub no es lo mismo que Git, GitHub es un servicio de alojamiento en la nube b
 No, existen mas servicios como Bitbucket, GitLab.
 ## Repositorios remotos
 Son repositorios alojados en un servidor y estará sujeto a sincronización con el repositorio local.
+## Características que ofrece GitHub
+### Mi Perfil y mis repositorios
+Estadísticas, contribuciones que hacemos a nuestros y otros repositorios.  
+Visualización de la cantidad de repositorios propios (tienen un limite) y en los que participamos.
