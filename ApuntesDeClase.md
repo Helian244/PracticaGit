@@ -81,6 +81,8 @@ Permite el desarrollo colaborativo y no lineal.
 ***$ git checkout &lt;nombre de la rama&gt;***  
 o  
 ***$ git switch &lt;nombre de la rama&gt;***  
+También tenemos que para cambiar constantemente entre 2 ramas, una rama previa:  
+***$ git switch -***  
 ### Para hacer los 2 anteriores pasos a la vez
 ***$ git switch -c &lt;nombre de la rama&gt;***  
 
