@@ -41,3 +41,6 @@ Pegar en seccion "key":
 ### Clonación de repositorios
 Usamos el comando en git bash:  
 ***$ git clone <direccion HTTPS del repositorio terminado en ".git">***  
+### Realizar cambios en el repositorio remoto
+Para ir modificando el remoto debemos escribir el siguiente comando:  
+***$ git push \<alias del repositorio remoto> \<rama a la cual enviaremos los cambios>***  
