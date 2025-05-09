@@ -12,4 +12,6 @@ Utiliza las siguientes ramas:
 Tiene la rama **main** como principal y otras ramas que seran integradas por una PR.  
 Para hacer uso de este flujo es necesario tener conocimiento de CI/CD.  
 ![GitHub Flow](<imagenes/2025-05-09 14_37_25-Clase de Git_GitHub- Scesi - 5 - YouTube.png>)
-
+## Trunk Based Development
+Solo la rama **main** y ramas auxiliares temporales que seran integradas por un PR.  
+![Trunk Base Development](<imagenes/2025-05-09 14_40_55-Clase de Git_GitHub- Scesi - 5 - YouTube.png>)
