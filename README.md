@@ -40,7 +40,17 @@ Pegar en seccion "key":
 ***https://github.com/settings/ssh/new***  
 ### Clonación de repositorios
 Usamos el comando en git bash:  
-***$ git clone <direccion HTTPS del repositorio terminado en ".git">***  
+***$ git clone <dirección HTTPS del repositorio terminado en ".git">***  
 ### Realizar cambios en el repositorio remoto
 Para ir modificando el remoto debemos escribir el siguiente comando:  
 ***$ git push \<alias del repositorio remoto> \<rama a la cual enviaremos los cambios>***  
+### Creación de una rama remota
+Usamos el siguiente comando en git bash:  
+***$ git switch -c \<rama>***  
+También podemos usar esta otra variante:  
+***$ git checkout -b \<rama>***  
+Este comando crea la nueva rama en el repositorio local.  
+Para enviar esta rama al remoto usamos:  
+***$ git push \<alias del remoto> \<rama>***  
+Considerar que tratar de hacer push a una rama no existente generara un error  
+![push inexistente](<imagenes/2025-05-09 11_48_11-MINGW64__g_ProyectoGit.png>)
