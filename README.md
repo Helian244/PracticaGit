@@ -57,3 +57,5 @@ Considerar que tratar de hacer push a una rama no existente generara un error
 ### Eliminar ramas del repositorio local que ya no se usan
 Ejecuta el comando:  
 ***$ git remote prune \<alias del remoto>***  
+### ***$ git fetch***  
+Nos permite actualizar las referencias del remoto a nuestro local, es precisamente importante hacerlo antes de un *git pull*
