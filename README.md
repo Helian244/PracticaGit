@@ -15,3 +15,9 @@ Para hacer uso de este flujo es necesario tener conocimiento de CI/CD.
 ## Trunk Based Development
 Solo la rama **main** y ramas auxiliares temporales que seran integradas por un PR.  
 ![Trunk Base Development](<imagenes/2025-05-09 14_40_55-Clase de Git_GitHub- Scesi - 5 - YouTube.png>)
+## Ship/Show/Ask
+1. **Ship :** Se fusiona en la rama principal sin revision.
+2. **Show :** Petición de cambios para ser revisados por medio de CI, la fusion se da inmediatamente.
+3. **Ask :** PR para discutir los cambias antes de la fusion.  
+  
+Flujo de trabajo sugerido para expertos, que tengan seguridad de subir sus cambios y pleno conocimiento del proyecto.
