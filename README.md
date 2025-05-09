@@ -76,3 +76,5 @@ Jalar los cambios del repositorio remoto al local.
 - ***$ git pull***  
 - ***$ git pull --set-upstream \<alias remoto> \<rama> :***  Sincroniza la rama local con la remota.  
 - ***$ git pull --all :*** Actualiza todas la ramas en las referencias correspondientes.  
+### Pull Request 
+Es un solicitud de integración de todos los cambios al repositorio de origen.
