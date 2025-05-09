@@ -21,3 +21,5 @@ Nos permiten tener una comunidad que comparte repositorios propios de la organiz
 ## Enlazar un repositorio local con uno remoto
 Usamos el siguiente comando en git bash:  
 ***$ git remote add \<alias>*** (usualmente el alias es "origin") ***\<url del repositorio remoto>***
+### Generar llaves SSH
+Las llaves se usan para autenticar la identidad de un contribuyente, evitan las suplantaciones de identidad.  
