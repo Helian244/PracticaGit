@@ -12,4 +12,16 @@ Esto tampoco implica hacer commits insignificantes.
 - Usa un máximo de 50 caracteres.
 - Añade contexto de ser necesario al cuerpo del commit.
 - Considera usar utilidades.
-- Usa prefijos para semántica.
+- Usa prefijos para semántica.  
+  
+![buen commit](imagenes/2025-05-09_20-33.png)
+## Prefijos
+- `feat`: Nueva funcionalidad.
+- `fix`: Corrección de bug.
+- `perf`: Mejoras en rendimiento.
+- `build` : Cambios en la configuración de build.
+- `ci`: Cambios en integración continua.
+- `docs`: Cambios en documentación.
+- `refactor`: Mejoras en código.
+- `style`: Cambios en estilo.
+- `test`: Cambios en pruebas.
