@@ -25,3 +25,8 @@ Esto tampoco implica hacer commits insignificantes.
 - `refactor`: Mejoras en código.
 - `style`: Cambios en estilo.
 - `test`: Cambios en pruebas.
+## Escribir un buen nombre de rama
+- Consistencia al nombrar ramas.
+- Usa el nombre de la acción que se realiza en la rama:  
+![ejemplos ramas](imagenes/2025-05-09_20-49.png)
+- Ayúdate con los IDs de Jira o un sistema de tickets.
